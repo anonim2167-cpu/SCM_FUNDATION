@@ -1,0 +1,341 @@
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 3;
+}
+
+body{
+    background-color: rgb(61, 63, 68);
+    
+}
+header{
+    background-color: plum;
+    min-height: 100px;
+
+}
+nav{
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    min-height: 20px;
+    padding: 5px;
+    
+}
+
+aside{
+    display: flex;
+    background-color: rgba(82, 8, 8, 0);
+    flex-direction: column;
+    height: auto;
+    padding: 5px;
+    width: 12%;
+}
+
+aside > a{
+width: 40px;
+}
+
+aside > #pion{
+    z-index: 1;
+}
+
+aside > #poziom{
+    z-index: 0;
+}
+
+a{
+    background-color: rgba(214, 214, 214, 0.356);
+    padding: 10px;
+    text-decoration: none;
+    width: 65px;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+}
+section{
+    flex: 66%;
+    background-color: rgb(53, 53, 53);
+    z-index: 0;
+}
+
+section img{
+    z-index: 22;
+}
+
+article{
+    padding: 5px;
+    
+}
+footer{
+    padding: 5px ;
+    background-color: rgba(160, 79, 79, 0.336);
+}
+@media screen and (max-width: 700px) {
+    main,nav{
+        flex-direction: column;
+    }
+    aside > a, nav > a{
+        width: auto;
+        margin: 5px;
+    }
+}
+
+li{
+    color: rgba(255, 255, 255, 0.596);
+}
+
+dl{
+    color: rgba(255, 255, 255, 0.596);
+}
+
+dt{
+    color: rgba(255, 255, 255, 0.596);
+}
+
+dd{
+    color: rgba(255, 255, 255, 0.596);
+}
+
+pre{
+    color: aliceblue;
+}
+h2{
+    color: red;
+}
+p{
+    color: azure;
+}
+figcaption{
+    color: thistle;
+}
+table{
+    background-color: rgba(163, 163, 163, 0.356);
+}
+tfoot{
+    background-color: rgb(46, 27, 27);
+}
+i{
+    color: rgb(82, 0, 0);
+}
+nav
+{
+    z-index: 1;
+}
+a
+{
+  color:white;
+  text-decoration:none;
+  display:block;
+
+}
+#poziom > a:hover
+{
+  color:rgb(0, 0, 0);
+  z-index: 20;
+}
+#poziom
+{
+  list-style-type:none;
+  position: sticky;
+  margin-left: -40px;
+  z-index: 20;
+  user-select: none; 
+}
+#poziom ul
+{
+  display:none;
+  margin:0;
+  padding:0;
+  z-index: 20;
+
+}
+#poziom  li  
+{
+  width:200px;
+  height: 50px;
+  background-color:rgba(81, 82, 75, 0.795);
+  border-top:1px solid rgb(0, 0, 0);
+  border-left:1px solid rgb(0, 0, 0);
+  float:left;
+  z-index: 20;
+}
+
+#poziom li:hover, #poziom li a:hover
+{
+  background-color:rgb(99, 99, 99);
+  z-index: 20;
+}
+
+#poziom >  li:hover > ul
+{
+  display:block;
+  list-style-type:none;
+  z-index: 20;
+}
+
+#poziom > ul > li  
+{
+  margin-left:-1px;
+  width:170px;
+  z-index: 20;
+  
+}
+
+#poziom > li  > ul > li > a , #pion > li  > ul > li > a
+{
+ width: auto;
+  
+}
+
+#pion > a:hover
+{
+  color:rgb(0, 0, 0);
+}
+#pion
+{
+  list-style-type:none;
+  margin-left: -40px;
+  margin-top: -6px;
+  user-select: none; 
+}
+#pion ul
+{
+  display:none;
+  margin:0;
+  padding:0;
+
+}
+#pion  li  
+{
+  width:200px;
+  height: 50px;
+  background-color:rgba(81, 82, 75, 0.795);
+  border-top:1px solid rgb(0, 0, 0);
+  border-left:1px solid rgb(0, 0, 0);
+}
+#pion li:hover, #pion li a:hover
+{
+  background-color:rgb(99, 99, 99);
+  
+}
+
+#pion >  li:hover > ul
+{
+  display:block;
+  list-style-type:none;
+  margin-top:-31px;
+  padding-left: 200px;
+  padding-top: 12px;
+}
+
+#pion > ul > li  
+{
+  margin-left: 150px;
+}
+
+article
+{
+    z-index: 1;
+}
+
+@media screen and (max-width: 700px) {
+    #pion, #poziom{
+        flex-wrap: wrap;
+        flex: 10%;
+        flex-direction: row;
+        justify-content: flex-end;
+        justify-content: center;
+    }
+}
+
+#poziom a{
+    z-index: 4;
+}
+
+#pion > li, #poziom > li{
+    transition: 1s;
+}
+
+#pion > li:hover{
+    transform: scale(1.1);
+}
+
+#poziom > li:hover{
+    transform: scale(1.1);
+}
+
+#owerflow{
+    background-color: red;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    transition: 3s;
+}
+
+#owerflow:hover{
+    transform: scale(2);
+    overflow: scroll;
+}
+
+.h1Sofia{
+    font-family: "Sofia", sans-serif;
+}
+
+#owerflow{
+    z-index: 20;
+}
+
+.homee{
+    animation-duration: 2s;
+    animation-name: HomeB;
+    animation-iteration-count: infinite;
+}
+
+@keyframes HomeB {
+    0%   { left:0px; top:0px;}
+    50%  { left:0px; top:3px;  transform: scale(1.1)}
+    }
+
+#poziom > li > ul > li, #pion > li > ul > li{
+    transition: 1s;
+
+}
+
+#poziom > li > ul > li:hover{
+    transform: scaleX(1.2);
+
+}
+
+#pion > li > ul > li:hover{
+    transform: scaleY(1.2);
+
+}
+
+header{
+    background-color:  rgb(39, 39, 39);
+    background: linear-gradient(to top, rgba(231, 0, 0, 0.897) ,rgb(39, 39, 39),rgb(39, 39, 39));
+    color: rgba(231, 0, 0, 0.897);
+    transition: 0.2s;
+    user-select: none; 
+}
+
+header:active{
+    transform: scaleY(1.2);
+}
+
+img{
+    transition: 1s;
+}
+
+img:hover{
+    transform: scale(1.2);
+}
+
+.opisPostaci{
+    transition: 1s;
+}
+
+.opisPostaci:active{
+    transform: scale(2);
+    color: red;
+    background-color: black;
+}

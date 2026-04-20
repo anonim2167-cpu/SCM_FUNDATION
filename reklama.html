@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reklamodawca</title>
+    <link rel="stylesheet" href="styl.css">
+    <style>
+    .d1 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(117, 28, 28);
+        position: relative;
+        animation-name: myAnimation;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        border-radius: 100%;
+        display: inline-block;
+    }
+
+    .d2 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 7, 7);
+        position: relative;
+        animation-name: myAnimation2;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        border-radius: 10%;
+        display: inline-block;
+        transition: 1s;
+    }
+
+    @keyframes myAnimation {
+    0%   { left:0px; top:0px; transform: scaleY(1);}
+    25%  { left:-30px; top:100px; border-radius: 100%; transform: scaleX(2); transform: rotate(20deg);}
+    50%  { left:0px; top:0px;  transform: rotate(20deg)}
+    75%  { left:30px; top:100px; border-radius: 100%; transform: scaleX(2); transform: rotate(-20deg);}
+    100% { left:0px; top:0px; transform: scaleY(1);}
+    }
+
+    @keyframes myAnimation2 {
+    0%   { left:0px; top:0px; transform: scaleY(2);}
+    25%  { left:-70px; top:100px; border-radius: 100%; transform: scaleX(2); transform: rotate(20deg);}
+    50%  { left:0px; top:0px;  transform: rotate(20deg)}
+    75%  { left:70px; top:100px; border-radius: 10%; transform: scaleX(2); transform: rotate(-20deg);}
+    100% { left:0px; top:0px; transform: scaleY(2);}
+    }
+
+
+</style>
+</head>
+<body>
+    <header><h1 class="h1Sofia" >Reklamodawca promuje miękkie koce bawełniane</h1></header>
+    <nav>
+        <ol id="poziom">
+                <li class="homee">
+                   <a href="index.html">Home</a>
+                </li>
+            <li>
+                Ogłoszenia
+                <ul>
+                <li><a href="ogloszenie1.html">Ogłoszenie 1</a></li>
+                <li><a href="reklama.html" target="_blank">Reklamodawca</a></li>
+                </ul>
+            </li>
+            <li>
+                Postacie
+                <ul>
+                <li><a href="elb.html">Typy</a></li>
+                <li><a href="table.html">Obiekty</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                </ul>
+            </li>
+            <li>
+                Konto
+                <ul>
+                <li><a href="formularz.html">Logowanie</a></li>
+                </ul>
+            </li>
+        </ol>
+        </nav>
+
+    <main>
+        <aside>
+                    <ol id="pion">
+                        <li>
+                            Archiwum
+                            <ul>
+                            <li><a href="scmArchiwum.html">Archiwum 1</a></li>
+                            <li><a href="reklama.html" target="_blank">Reklamodawca</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Wsparcie
+                            <ul>
+                            <li><a href="scmtel.html" target="_blank">SCM tel.</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Kontak
+                            <ul>
+                            <li><a href="scmtel.html" target="_blank">SCM tel.</a></li>
+                            </ul>
+                        </li>
+                    </ol>
+        </aside>
+        
+    <div class="d1"></div>
+    <div class="d1"></div> 
+    <div class="d2"></div>
+    <br>
+    <hr>
+</body>
+<script src="skryptAll.js"></script>
+</html>

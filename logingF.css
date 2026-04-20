@@ -1,0 +1,31 @@
+#submit{
+    transition: 1s;
+}
+
+#submit:hover{
+    transform: scale(2);
+}
+
+#resultDIV{
+    width: auto;
+    height: 30px;
+    background-color: rgb(15, 15, 15);
+    color: red;
+    transition: 1s;
+    text-align: center;
+}
+
+#resultDIV:hover{
+    transform: scale(2);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input{
+    width: auto;
+    height: 30px;
+    margin: 2px;
+    transition: 1s;
+}
+
+input:hover{
+   transform: scale(2); 
+}
