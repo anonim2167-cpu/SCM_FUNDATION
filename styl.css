@@ -332,6 +332,7 @@ img:hover{
 
 .opisPostaci{
     transition: 1s;
+    user-select: none;
 }
 
 .opisPostaci:active{
